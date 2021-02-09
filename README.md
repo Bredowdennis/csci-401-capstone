@@ -1,11 +1,11 @@
 # csci-401-capstone
-Repo for hosting Letter of Recommendation Generator Capstone Project as of Fall 2019.
+Repo for hosting Letter of Recommendation Generator Capstone Project as of Spring 2021.
 
 Team members:
-+ Nolan Jimenez – najimene@usc.edu
-+ Roopal Kondepudi – kondepud@usc.edu 
-+ Scott Mai – scottmai@usc.edu
-+ Dhivya Senthil Murugan – senthilm@usc.edu
++ Bredow Dennis – ebdennis@usc.edu
++ Zhiyu Cai – zhiyucai@usc.edu 
++ Zhiyu Liao – zhiyulia@usc.edu
++ Xinyi Cao – xinyicao@usc.edu
 
 
 ## How to Run Locally
@@ -36,7 +36,7 @@ For the last step, you may need to kill the previous process on port 3000 using 
 Afterwards, test to see if the app is properly running by accessing `68.181.97.191/login` on your browser.
 
 
-## Deployment (as of Spring 2019) (old)
+## Deployment (as of Spring 2021) (old)
 Currently, our app is hosted on a server with IP address 68.181.97.191 on port 3000, with the MongoDB instance on the same IP address but at port 12345.
 
 ____________________________________________________________________________________________________________________________
@@ -78,7 +78,8 @@ ________________________________________________________________________________
       This creates the default directory to which MongoDB will write data
       
       ```
-      sudo mkdir -p /data/db
+      sudo mkdir -p /data/db (Window and Mac before OS Catalina)
+      sudo mkdir -p /System/Volumes/Data/db (Mac OS Catalina)
       ```
    2. Set permissions for the data directory.
    
@@ -86,6 +87,7 @@ ________________________________________________________________________________
       
       ```
       sudo chmod 755 /data/db
+      sudo chwon -Rid -un/System/Volumes/Data/data/db
       ```
    3. Run the `mongod` process.
       
